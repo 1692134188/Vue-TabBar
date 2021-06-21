@@ -1,21 +1,6 @@
 <template>
   <div id="tab-bar">
-    <div class="tab-bar-item">
-      <img src="../../assets/img/tabbar/home.svg" alt="" />
-      <div>首页</div>
-    </div>
-    <div class="tab-bar-item">
-      <img src="../../assets/img/tabbar/category.svg" alt="" />
-      <div>分类</div>
-    </div>
-    <div class="tab-bar-item">
-      <img src="../../assets/img/tabbar/shopcart.svg" alt="" />
-      <div>购物车</div>
-    </div>
-    <div class="tab-bar-item">
-      <img src="../../assets/img/tabbar/profile.svg" alt="" />
-      <div>我的</div>
-    </div>
+    <slot name="itemBar"> </slot>
   </div>
 </template>
 
