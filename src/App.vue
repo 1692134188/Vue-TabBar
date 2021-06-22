@@ -3,24 +3,36 @@
     <tab-bar>
       <template v-slot:itemBar>
         <tab-bar-item>
+          <template v-slot:activeImgSlot>
+            <img src="./assets/img/tabbar/home_active.svg" alt="" />
+          </template>
           <template v-slot:imgSlot>
             <img src="./assets/img/tabbar/home.svg" alt="" />
           </template>
           <template v-slot:textSlot> 首页</template>
         </tab-bar-item>
         <tab-bar-item>
+          <template v-slot:activeImgSlot>
+            <img src="./assets/img/tabbar/category_active.svg" alt="" />
+          </template>
           <template v-slot:imgSlot>
             <img src="./assets/img/tabbar/category.svg" alt="" />
           </template>
           <template v-slot:textSlot> 分类</template>
         </tab-bar-item>
         <tab-bar-item>
+          <template v-slot:activeImgSlot>
+            <img src="./assets/img/tabbar/shopcart_active.svg" alt="" />
+          </template>
           <template v-slot:imgSlot>
             <img src="./assets/img/tabbar/shopcart.svg" alt="" />
           </template>
           <template v-slot:textSlot> 购物车</template>
         </tab-bar-item>
         <tab-bar-item>
+          <template v-slot:activeImgSlot>
+            <img src="./assets/img/tabbar/profile_active.svg" alt="" />
+          </template>
           <template v-slot:imgSlot>
             <img src="./assets/img/tabbar/profile.svg" alt="" />
           </template>

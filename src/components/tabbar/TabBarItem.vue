@@ -1,6 +1,7 @@
 <template>
   <div class="tab-bar-item">
-    <slot name="imgSlot"></slot>
+    <div v-show="isActive"><slot name="activeImgSlot"></slot></div>
+    <div v-show="!isActive"><slot name="imgSlot"></slot></div>
     <div><slot name="textSlot"></slot></div>
   </div>
 </template>
@@ -8,6 +9,11 @@
 <script>
 export default {
   name: "TabBarItem",
+  computed: {
+    isActive() {
+      return true;
+    },
+  },
 };
 </script>
 
