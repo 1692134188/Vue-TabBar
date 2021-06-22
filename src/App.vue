@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-view></router-view>
     <tab-bar>
       <template v-slot:itemBar>
         <tab-bar-item>
