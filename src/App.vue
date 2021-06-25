@@ -3,7 +3,7 @@
     <router-view></router-view>
     <tab-bar>
       <template v-slot:itemBar>
-        <tab-bar-item>
+        <tab-bar-item path="/home">
           <template v-slot:activeImgSlot>
             <img src="./assets/img/tabbar/home_active.svg" alt="" />
           </template>
@@ -12,7 +12,7 @@
           </template>
           <template v-slot:textSlot> 首页</template>
         </tab-bar-item>
-        <tab-bar-item>
+        <tab-bar-item path="/category">
           <template v-slot:activeImgSlot>
             <img src="./assets/img/tabbar/category_active.svg" alt="" />
           </template>
@@ -21,7 +21,7 @@
           </template>
           <template v-slot:textSlot> 分类</template>
         </tab-bar-item>
-        <tab-bar-item>
+        <tab-bar-item  path="/cart">
           <template v-slot:activeImgSlot>
             <img src="./assets/img/tabbar/shopcart_active.svg" alt="" />
           </template>
@@ -30,7 +30,7 @@
           </template>
           <template v-slot:textSlot> 购物车</template>
         </tab-bar-item>
-        <tab-bar-item>
+        <tab-bar-item  path="/profile">
           <template v-slot:activeImgSlot>
             <img src="./assets/img/tabbar/profile_active.svg" alt="" />
           </template>
