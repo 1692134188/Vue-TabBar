@@ -3,7 +3,7 @@
     <router-view></router-view>
     <tab-bar>
       <template v-slot:itemBar>
-        <tab-bar-item path="/home">
+        <tab-bar-item path="/home" activeColor="blue">
           <template v-slot:activeImgSlot>
             <img src="./assets/img/tabbar/home_active.svg" alt="" />
           </template>
